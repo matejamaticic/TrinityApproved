@@ -1,0 +1,170 @@
+body {
+    font-family: 'Raleway', sans-serif !important;
+    margin: 0px;
+    color: #111111;
+}
+
+a:hover {
+    color: #33bbdf;
+}
+
+header, footer, div.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*background: #daeef3;*/
+    padding: 0px 30px;
+}
+
+header, footer {
+    line-height: 60px;
+}
+
+footer {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.dropdown-item {
+    line-height: 30px;
+}
+
+header h1 {
+    color: #169bbd;
+    margin: 0;
+    font-weight: normal;
+    font-size: 42px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 8px 0 0;
+    padding: 0;
+}
+
+div.page {
+    background: #f1fbfe;
+}
+
+div.thumb {
+    padding:3px;
+}
+
+div.active a {
+    color: #e5cace;
+}
+
+a {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.65px;
+    color: #111111;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #e5cace;
+}
+
+.dropdown-toggle::after {
+    border: none;
+}
+
+.dropdown-toggle span.plus {
+    color: grey;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: unset;
+    min-width: 200px;
+    position: absolute;
+    transform: translate3d(8px, 60px, 0px) !important;
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+}
+
+.dropdown-item {
+    text-align:center;
+    font-weight: 700;
+}
+
+div.active a.dropdown-item {
+    color: #111111;
+}
+
+.button, .dropdown-menu {margin:10px auto}
+.dropdown-menu {width:200px; left:50% !important; margin-left:-100px;}
+
+
+
+@media (min-width: 979px) { 
+    div.dropdown:hover > div.dropdown-menu {
+        display: block;
+    }
+}
+
+.fa {
+    color: #e5cace;
+}
+
+footer > .fa {
+    font-size: 13px;
+}
+
+.dropdown-item:active {
+    text-decoration: none;
+    background-color: #e5cace;
+}
+
+#header-banner.cover {
+    background: url(../cover.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #cccccc;
+}
+
+.banner-content {
+    padding: 170px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.banner-info {
+    background: rgba(255, 255, 255, 0.75);
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.talkbubble {
+   width: 400px;
+   margin: 0 auto;
+   padding: 50px 0;
+   background: rgba(255, 255, 255, 0.75);
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+.talkbubble:before {
+   content:"";
+   position: absolute;
+   left: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-left: 26px solid rgba(255, 255, 255, 0.75);
+   border-bottom: 13px solid transparent;
+}
